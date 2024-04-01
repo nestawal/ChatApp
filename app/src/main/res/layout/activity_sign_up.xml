@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/logoapp"
+        android:layout_width="232dp"
+        android:layout_height="163dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:src="@drawable/logoapp" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/logoapp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/edit_background"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:paddingLeft="13dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/logoapp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/edit_background"
+        android:hint="Email"
+        android:paddingLeft="13dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="351dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/edit_email"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/edit_background"
+        android:hint="password(min 6)"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_password"
+        android:text="SIGN UP"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
